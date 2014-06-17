@@ -1,0 +1,24 @@
+2012/07/20 10:25:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Запрашиваемый шаблон вида "МЫ" не найден.' in /var/www/yii/framework/web/actions/CViewAction.php:113
+Stack trace:
+#0 /var/www/yii/framework/web/actions/CViewAction.php(124): CViewAction->resolveView('????')
+#1 /var/www/yii/framework/web/actions/CAction.php(75): CViewAction->run()
+#2 /var/www/yii/framework/web/CController.php(309): CAction->runWithParams(Array)
+#3 /var/www/yii/framework/web/CController.php(287): CController->runAction(Object(CViewAction))
+#4 /var/www/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('page')
+#6 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/page')
+#7 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/testdrive/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/testdrive/index.php?r=site/page&view=%D0%9C%D0%AB
+---
+2012/07/24 10:53:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "log".' in /var/www/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(271): CController->missingAction('log')
+#1 /var/www/yii/framework/web/CWebApplication.php(276): CController->run('log')
+#2 /var/www/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/log')
+#3 /var/www/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/linuxpark/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/linuxpark/index.php?r=site/log
+---
